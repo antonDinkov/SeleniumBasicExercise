@@ -26,5 +26,11 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
       
-    - name: Run Webdriver UI Tests
-      run: dotnet test --no-build --verbosity normal
+    - name: Run Webdriver UI Tests Project1
+      run: dotnet test TestProject1 --no-build --verbosity normal
+
+    - name: Run Webdriver UI Tests Project2
+      run: dotnet test TestProject2 --no-build --verbosity normal
+
+    - name: Run Webdriver UI Tests Project3
+      run: dotnet test TestProject3 --no-build --verbosity normal
